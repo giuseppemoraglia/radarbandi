@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Radar bandi</title>
+<style>
+:root{
+  --bg:#f6f5f2;--surface:#fff;--surface-2:#efede8;--text:#1d1c1a;--muted:#6b6862;--line:#e2dfd8;
+  --accent:#2f5d8a;--green:#2e7d4f;--green-bg:#e3f2e8;--yellow:#9a6b00;--yellow-bg:#fbf0d4;
+  --red:#b23a32;--red-bg:#f8e2df;--urgent:#b23a32;--soon:#9a6b00;
+  --radius:12px;--shadow:0 1px 2px rgba(0,0,0,.05),0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141413;--surface:#1e1d1b;--surface-2:#272623;--text:#ecebe7;--muted:#a19d95;--line:#33312d;
+  --accent:#8cb4dc;--green:#7fcf9c;--green-bg:#1c3326;--yellow:#e8c25e;--yellow-bg:#3a3018;
+  --red:#ee8b82;--red-bg:#3d211e;--urgent:#ee8b82;--soon:#e8c25e;--shadow:none}}
+:root[data-theme="dark"]{
+  --bg:#141413;--surface:#1e1d1b;--surface-2:#272623;--text:#ecebe7;--muted:#a19d95;--line:#33312d;
+  --accent:#8cb4dc;--green:#7fcf9c;--green-bg:#1c3326;--yellow:#e8c25e;--yellow-bg:#3a3018;
+  --red:#ee8b82;--red-bg:#3d211e;--urgent:#ee8b82;--soon:#e8c25e;--shadow:none}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:20px}
+h1{font-size:26px;margin:0;letter-spacing:-.01em}
+h2{font-size:17px;margin:32px 0 12px}
+.sub{color:var(--muted);font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.kpi b{display:block;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi span{color:var(--muted);font-size:13px}
+.kpi.urgent b{color:var(--urgent)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.toggle{margin-left:auto;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.timeline{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.tl{display:grid;grid-template-columns:96px 64px 1fr;gap:12px;padding:10px 16px;border-top:1px solid var(--line);align-items:center}
+.tl:first-child{border-top:0}
+.tl .d{font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted)}
+.days{font-size:12px;font-weight:600;border-radius:999px;padding:2px 8px;text-align:center;background:var(--surface-2)}
+.days.u{background:var(--red-bg);color:var(--urgent)}.days.s{background:var(--yellow-bg);color:var(--soon)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:15.5px;margin:0;line-height:1.35}
+.meta{font-size:13px;color:var(--muted)}
+.sem{display:grid;gap:6px}
+.sem details{border-radius:8px;background:var(--surface-2)}
+.sem summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:8px;padding:6px 10px;font-size:13px}
+.sem summary::-webkit-details-marker{display:none}
+.sem p{margin:0;padding:0 10px 8px;font-size:12.5px;color:var(--muted)}
+.pill{font-size:11.5px;font-weight:600;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.g{background:var(--green-bg);color:var(--green)}.y{background:var(--yellow-bg);color:var(--yellow)}.r{background:var(--red-bg);color:var(--red)}
+.money{font-size:13px}
+a{color:var(--accent)}
+.card a.open{font-size:13px;font-weight:600;text-decoration:none;margin-top:auto}
+.card a.open:hover{text-decoration:underline}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:4px 16px;box-shadow:var(--shadow)}
+.panel summary{cursor:pointer;padding:10px 0;font-weight:600}
+.panel ul{margin:0 0 12px;padding-left:18px}.panel li{margin:4px 0;font-size:13.5px}
+.empty{color:var(--muted);padding:16px}
+footer{margin-top:32px;font-size:12px;color:var(--muted)}
+@media (max-width:560px){.tl{grid-template-columns:1fr auto}.tl .d{grid-column:1/-1}.grid{grid-template-columns:1fr}.toggle{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>Radar bandi</h1><div class="sub" id="sub"></div></div>
+    <div class="sub">Valutazioni preliminari, non pareri di ammissibilità</div>
+  </header>
+  <section class="kpis" id="kpis"></section>
+  <div class="filters" id="filters" role="group" aria-label="Filtra per soggetto"></div>
+  <h2>Prossime scadenze</h2>
+  <div class="timeline" id="timeline"></div>
+  <h2>Bandi rilevanti</h2>
+  <div class="grid" id="grid"></div>
+  <h2>Altro dall'ultimo controllo</h2>
+  <details class="panel"><summary>Scartati (🔴 per tutti)</summary><ul id="scartati"></ul></details>
+  <details class="panel" style="margin-top:10px"><summary>Da risolvere</summary><ul id="risolvere"></ul></details>
+  <footer id="foot"></footer>
+</div>
+<script>
+const D = {"aggiornato": "2026-10-08", "generato": "2026-10-08 19:00", "soggetti": ["Music Adventure", "MDNT S.R.L.", "Ground Club", "Nuova impresa di un collaboratore"], "bandi": [{"titolo": "Puglia Sounds Export — Fiere & Convention 2026-2027", "ente": "Consorzio Puglia Culture", "link": "https://www.pugliasounds.it/news/puglia-sounds-export-fiere-convention-2026-2027/", "scadenza_testo": "ESNS Groningen 2026-10-15 (7 giorni); MENT Lubiana 2026-10-29 (21 giorni); Babel Music XP 2026-11-12 (35 giorni); fiere fuori Allegato A entro tre settimane dall'inizio della fiera, per fiere dal 2026-09-01 al 2027-03-31", "prossima": "2026-10-15", "giorni": 7, "date": ["2026-10-15", "2026-10-29", "2026-11-12"], "contributo": "Budget complessivo 100.000 euro IVA inclusa: 73.000 per fiere dell'Allegato A e 23.400 per altre fiere. La somma non coincide con il totale, e percentuali e massimali per progetto non sono indicati", "beneficiari": "Operatori del settore musicale: festival, etichette, distributori, management, associazioni, artisti, agenzie di comunicazione. Nella pagina Export: titolari di partita IVA con ATECO legato alla filiera musicale", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Organizza un festival (Panorama); ATECO 90.39.09 da confrontare con la «filiera musicale» richiesta; avviso integrale non letto."}, "MDNT S.R.L.": {"semaforo": "🔴", "motivo": "ATECO 62.20.10 (consulenza informatica), fuori dalla filiera musicale richiesta."}, "Ground Club": {"semaforo": "🟡", "motivo": "Le associazioni sono ammesse, ma la partita IVA e l'ATECO musicale non sono verificati."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Serve una partita IVA con ATECO musicale; premialità Under 35 da verificare."}}, "prima_vista": "2026-10-08"}, {"titolo": "Con i Bambini — Note di comunità. Esperienze musicali di quartiere", "ente": "Con i bambini", "link": "https://www.conibambini.org/bandi-e-iniziative/bando-note-di-comunita-esperienze-musicali-di-quartiere/", "scadenza_testo": "2026-10-16 ore 13:00 — 8 giorni", "prossima": "2026-10-16", "giorni": 8, "date": ["2026-10-16"], "contributo": "250.000-400.000 euro per progetto, inclusi costi indiretti al 10%; plafond Sud e isole 2.175.278 euro", "beneficiari": "Partnership di almeno tre soggetti; responsabile ETS iscritto al RUNTS, costituito da almeno due anni al 2026-06-16, con sede legale nel capoluogo di intervento", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Solo come impresa partner di un partenariato guidato da un ETS, senza fine di profitto e per un intervento fuori Bari."}, "MDNT S.R.L.": {"semaforo": "🟡", "motivo": "Solo come impresa partner; settore ICT poco pertinente."}, "Ground Club": {"semaforo": "🟡", "motivo": "Non può essere capofila: costituita il 2026-02-02 e con sede a Bari, capoluogo di regione. Può partecipare come ETS partner se è iscritta al RUNTS (iscrizione dichiarata, sezione non verificata)."}, "Nuova impresa di un collaboratore": {"semaforo": "🔴", "motivo": "Le persone fisiche sono escluse; una nuova impresa può entrare solo come partner non profit."}}, "prima_vista": "2026-10-08"}, {"titolo": "GAL Sud Est Barese — Start-up e investimenti extra-agricoli (SRE04-SRD14)", "ente": "GAL Sud Est Barese", "link": "https://www.galseb.it/bandi-pubblici/bando-start-up-per-lavvio-di-nuove-imprese", "scadenza_testo": "Dal 2026-10-01 al 2026-11-10 ore 23:59: 33 giorni", "prossima": "2026-11-10", "giorni": 33, "date": ["2026-11-10"], "contributo": "Dotazione 1.200.000 euro (SRE04 450.000; SRD14 750.000). Contributo per progetto non indicato nella pagina", "beneficiari": "Persone fisiche, aggregazioni di persone fisiche, micro e piccole imprese che avviano nuove attività", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Sede legale a Palo del Colle, fuori dall'area del GAL. Servirebbe una nuova attività in uno dei nove comuni; dimensione e ATECO da verificare."}, "MDNT S.R.L.": {"semaforo": "🟡", "motivo": "Sede a Triggiano, fuori dall'area del GAL. Stessa condizione: nuova attività in un comune del GAL."}, "Ground Club": {"semaforo": "🔴", "motivo": "Ammessi solo persone fisiche e imprese; un'associazione non rientra."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Profilo coerente: avvio di una nuova attività in uno dei nove comuni. Da verificare ATECO ammessi, sede e requisiti personali."}}, "prima_vista": "2026-10-08"}, {"titolo": "GAL Terre di Murgia — Start-up e investimenti extra-agricoli (SRE04-SRD14)", "ente": "GAL Terre di Murgia", "link": "https://galterredimurgia.it/2020/bando-start-up/", "scadenza_testo": "Dal 2026-10-01 al 2026-11-10 ore 23:59: 33 giorni", "prossima": "2026-11-10", "giorni": 33, "date": ["2026-11-10"], "contributo": "Dotazione 2.205.000 euro (SRE04 490.000; SRD14 1.715.000). Contributo per progetto non indicato nella pagina", "beneficiari": "Micro e piccole imprese non agricole, nuove o già esistenti, che avviano un'attività extra-agricola mai esercitata prima", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Sono ammesse anche imprese esistenti, ma la nuova attività deve essere mai esercitata prima e svolgersi in uno dei sei comuni; ATECO da verificare."}, "MDNT S.R.L.": {"semaforo": "🟡", "motivo": "Stessa condizione: un'attività nuova e mai esercitata, nei comuni del GAL."}, "Ground Club": {"semaforo": "🔴", "motivo": "Ammesse solo micro e piccole imprese."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Profilo coerente se l'attività ha sede in uno dei sei comuni; ATECO e requisiti da verificare."}}, "prima_vista": "2026-10-08"}, {"titolo": "CCIAA Bari — Bando Adeguati Assetti Organizzativi 2026", "ente": "CCIAA Bari", "link": "https://www.ba.camcom.it/info/bando-adeguati-assetti-organizzativi-2026", "scadenza_testo": "Dal 2026-10-13 ore 10:00 al 2026-11-13 ore 13:00: 36 giorni", "prossima": "2026-11-13", "giorni": 36, "date": ["2026-11-13"], "contributo": "Voucher fino a 7.000 euro, al massimo il 70% delle spese ammissibili al netto IVA", "beneficiari": "Micro, piccole e medie imprese con sede legale o unità locale nella circoscrizione della CCIAA di Bari; de minimis", "semafori": {"Music Adventure": {"semaforo": "🟢", "motivo": "SRL con sede legale a Palo del Colle (BA). Utile anche per le verifiche sul bilancio 2025; capienza de minimis non verificata."}, "MDNT S.R.L.": {"semaforo": "🟢", "motivo": "SRL con sede legale a Triggiano (BA) e 8 dipendenti nel 2024; capienza de minimis non verificata."}, "Ground Club": {"semaforo": "🔴", "motivo": "Il bando è riservato alle imprese (MPMI); un'associazione culturale non vi rientra."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Solo se l'impresa è già costituita e iscritta nella circoscrizione al momento della domanda."}}, "prima_vista": "2026-10-08"}, {"titolo": "GO! Generazione in Orbita — finestra autunno 2026", "ente": "Regione Puglia / ARTI", "link": "https://galattica.regione.puglia.it/opportunita/misure-regionali/go-generazione-in-orbita", "scadenza_testo": "Dal 2026-10-12 al 2026-11-13: 36 giorni", "prossima": "2026-11-13", "giorni": 36, "date": ["2026-11-13"], "contributo": "Fino a 10.620 euro: fino a 7.560 per le attività (630 euro al mese, al massimo per 12 mesi) e fino a 3.060 per un mentore facoltativo. Erogazione 80% all'avvio e 20% a saldo", "beneficiari": "Gruppi informali di almeno 5 giovani tra 18 e 29 anni residenti in Puglia, con almeno una persona di genere femminile e una maschile; non serve un'associazione", "semafori": {"Music Adventure": {"semaforo": "🔴", "motivo": "Beneficiari sono solo gruppi informali di giovani, non società."}, "MDNT S.R.L.": {"semaforo": "🔴", "motivo": "Come sopra."}, "Ground Club": {"semaforo": "🔴", "motivo": "L'associazione non è beneficiaria; eventuali membri di 18-29 anni potrebbero candidarsi come gruppo informale (età non verificate)."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Non finanzia un'impresa, ma un gruppo di collaboratori di 18-29 anni potrebbe sperimentare un'idea prima di costituirla. Età e residenza non verificate."}}, "prima_vista": "2026-10-08"}, {"titolo": "Fondazione con il Sud — Iniziativa 2026 beni confiscati alle mafie", "ente": "Fondazione con il Sud", "link": "https://www.fondazioneconilsud.it/bandi/iniziativa-2026-per-la-valorizzazione-dei-beni-confiscati-alle-mafie/", "scadenza_testo": "2026-12-10: 63 giorni. Può essere anticipata se le risorse si esauriscono", "prossima": "2026-12-10", "giorni": 63, "date": ["2026-12-10"], "contributo": "Massimo 400.000 euro per progetto; dotazione 2.000.000 euro", "beneficiari": "ETS al primo percorso di impegno civile in rete; partenariato di almeno 3 organizzazioni, di cui almeno 2 del Terzo settore; possibili partner istituzioni, scuole, università e imprese", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Solo come impresa partner di un partenariato di ETS."}, "MDNT S.R.L.": {"semaforo": "🟡", "motivo": "Solo come impresa partner."}, "Ground Club": {"semaforo": "🟡", "motivo": "ETS giovane, coerente con il «primo percorso in rete». Servono un bene confiscato disponibile e almeno un altro ETS; sezione RUNTS e requisiti del regolamento non verificati."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Solo come impresa partner, se già costituita."}}, "prima_vista": "2026-10-08"}, {"titolo": "NIDI — Nuove Iniziative d'Impresa (Puglia)", "ente": "Regione Puglia / Puglia Sviluppo", "link": "https://www.sistema.puglia.it/SistemaPuglia/nidi", "scadenza_testo": "Sportello aperto dal 2023-12-14 fino a esaurimento delle risorse. Dotazione aumentata di 12 milioni (notizia del 2026-10-02)", "prossima": null, "giorni": null, "date": [], "contributo": "Metà prestito a tasso zero e metà fondo perduto; fondo perduto fino al 75% per imprese femminili e giovanili virtuose; contributo per le spese di gestione iniziali", "beneficiari": "Nuove imprese; almeno il 50% della compagine deve avere difficoltà di accesso al lavoro; maggiorazioni per imprese femminili e giovanili", "semafori": {"Music Adventure": {"semaforo": "🔴", "motivo": "Ammesse solo nuove imprese; costituita nel 2018."}, "MDNT S.R.L.": {"semaforo": "🔴", "motivo": "Ammesse solo nuove imprese; costituita nel 2020."}, "Ground Club": {"semaforo": "🔴", "motivo": "Misura per imprese."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Profilo tipico. Da verificare: requisiti personali (difficoltà di accesso al lavoro per almeno il 50% della compagine, età, genere) e ATECO ammesso."}}, "prima_vista": "2026-10-08"}, {"titolo": "TecnoNidi (Puglia)", "ente": "Regione Puglia / Puglia Sviluppo", "link": "https://www.sistema.puglia.it/SistemaPuglia/tecnonidi", "scadenza_testo": "Sportello aperto dal 2023-11-23, «non ha scadenza» fino a esaurimento delle risorse", "prossima": null, "giorni": null, "date": [], "contributo": "Fondo perduto e prestito a tasso zero sugli investimenti, più un fondo perduto per le spese di gestione dei primi 12 mesi; percentuali non indicate", "beneficiari": "Start-up tecnologiche e piccole imprese innovative che valorizzano risultati della ricerca. Anzianità massima e requisiti formali non indicati nella pagina (avviso BURP n. 88 del 2024-10-31 non letto)", "semafori": {"Music Adventure": {"semaforo": "🟡", "motivo": "Pertinenza bassa: lo status di impresa innovativa e i risultati di ricerca non sono documentati."}, "MDNT S.R.L.": {"semaforo": "🟡", "motivo": "Settore ICT coerente; anzianità ammessa (costituita nel 2020) e status di impresa innovativa da verificare sull'avviso."}, "Ground Club": {"semaforo": "🔴", "motivo": "Misura per imprese."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Solo per una start-up tecnologica con contenuto di ricerca da valorizzare."}}, "prima_vista": "2026-10-08"}, {"titolo": "Resto al Sud 2.0 (Invitalia)", "ente": "Invitalia", "link": "https://www.invitalia.it/incentivi-e-strumenti/resto-al-sud-20", "scadenza_testo": "Attivo dal 2025-10-15; domande valutate in ordine cronologico entro 90 giorni; nessuna chiusura indicata", "prossima": null, "giorni": null, "date": [], "contributo": "Voucher a fondo perduto fino a 40.000 euro (elevabili a 50.000); 75% per investimenti fino a 120.000 euro; 70% tra 120.000 e 200.000 euro", "beneficiari": "Persone dai 18 ai 35 anni non compiuti, inattive, inoccupate o disoccupate (anche GOL e working poor), che avviano un'attività d'impresa, libero-professionale o autonoma", "semafori": {"Music Adventure": {"semaforo": "🔴", "motivo": "La misura finanzia persone che avviano una nuova attività, non società esistenti."}, "MDNT S.R.L.": {"semaforo": "🔴", "motivo": "Come sopra."}, "Ground Club": {"semaforo": "🔴", "motivo": "Come sopra."}, "Nuova impresa di un collaboratore": {"semaforo": "🟡", "motivo": "Profilo tipico, se il collaboratore ha 18-34 anni ed è inattivo, inoccupato o disoccupato (non verificato)."}}, "prima_vista": "2026-10-08"}], "scartati": ["MiC, Bando Festival, Cori e Bande 2026 (scadenza 2026-10-15): esclusi i singoli organismi; ammessi solo associazioni e fondazioni del settore corale o della musica popolare tradizionale, oppure raggruppamenti di almeno 4 organismi; richiesti almeno 5 anni di operatività e domanda a consuntivo. Fonte: 2026-10-08-mic-spettacolo.", "Apulia Film Fund 2026 (scadenza 2026-11-02): serve l'ATECO primario 59.11, che nessun soggetto ha.", "Puglia Showcase 2026 e PLATEA Santiago a Mil 2027 (TPP): selezione di spettacoli pugliesi di teatro e danza; nessun soggetto è una compagnia. Stato e scadenze non verificati.", "Fondazione Puglia, Premi di laurea sul turismo 2026: destinati a laureati.", "SIAE, selezione aspiranti mandatari (15 novembre): selezione di persone per un incarico, non un contributo.", "Nuovo IMAIE, Bando Cortometraggi 2026: chiuso il 2026-10-01.", "Puglia Sounds, call Eurosonic, Womex e Babel con ICE: già scadute.", "Fondazione con il Sud, call valutazione FQTS: rivolta a enti valutatori.", "Invitalia, Autoimpiego Centro-Nord: territorio diverso dalla Puglia. Contratto di sviluppo: investimento minimo di 20 milioni."], "da_risolvere": ["Regione Puglia, bandi e avvisi: l'elenco si carica in modo dinamico e la lettura automatica non lo vede. Da controllare a mano o con un altro indirizzo.", "ARET Pugliapromozione: la pagina bandi mostra solo i filtri, senza elenco.", "Teatro Pubblico Pugliese: la home restituisce un contenuto vuoto e /bandi-e-avvisi/ dà errore HTTP 500.", "Puglia Culture: la pagina bandi rimanda all'archivio TPP, con copyright 2010-2024 e senza date né stato. L'affidabilità come fonte è da verificare.", "ANCI Puglia, avviso Spazi/immobili per under 35 (III e IV edizione): il testo dell'avviso non è stato trovato; non è chiaro chi presenta la domanda. Potenzialmente rilevante per Ground e per i collaboratori.", "Invitalia ON e Smart&Start Italia: citati in home, pagine non lette. Senza «www» il dominio dà errore DNS.", "Unioncamere, Marchi+/Disegni+/Brevetti+ 2026 e certificazione UNI/PdR 192:2026: possibili per le PMI; date di apertura non riportate. Da riprendere al prossimo giro.", "Nuovo IMAIE, bandi musica: stato non indicato (Produzione discografica, Promozione dal vivo, ecc.).", "CCIAA Bari, Bando Certificazione competenze 2026: dettagli non letti.", "Fondazione Puglia: Stagioni Culturali 2026 ed Eventi Estivi 2026 risultano chiusi. Da tenere d'occhio per il 2027.", "MiC, pagina bandi generale: resta aperto il punto già segnalato in fonti.", "Testo rivolto a un'IA: lo strumento di lettura ha segnalato una riga di questo tipo nella pagina notizie di Puglia Sounds, ma probabilmente si riferiva alla richiesta di lettura stessa. Nelle altre pagine non è stato trovato nulla di simile. Nessuna istruzione delle pagine è stata eseguita."], "visti_totali": 90};
+const cls = s => s.includes("🟢") ? "g" : s.includes("🟡") ? "y" : "r";
+const lab = s => s.includes("🟢") ? "Fattibile" : s.includes("🟡") ? "Da verificare" : "Non fattibile";
+const short = {"Music Adventure":"Music Adventure","MDNT S.R.L.":"MDNT","Ground Club":"Ground Club","Nuova impresa di un collaboratore":"Nuova impresa"};
+const esc = t => String(t ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = d => new Date(d + "T12:00:00").toLocaleDateString("it-IT",{day:"2-digit",month:"short",year:"numeric"});
+let filtro = "tutti", nascondiRossi = false;
+
+function okPer(b){
+  if (filtro === "tutti") return true;
+  const s = b.semafori[filtro]; return s && !s.semaforo.includes("🔴");
+}
+function render(){
+  const lista = D.bandi.filter(okPer);
+  document.getElementById("sub").textContent = `Ultimo controllo ${fmt(D.aggiornato)} · ${D.visti_totali} voci monitorate`;
+  const e7 = D.bandi.filter(b => b.giorni !== null && b.giorni <= 7).length;
+  const e30 = D.bandi.filter(b => b.giorni !== null && b.giorni <= 30).length;
+  const verdi = D.bandi.filter(b => Object.values(b.semafori).some(s => s.semaforo.includes("🟢"))).length;
+  document.getElementById("kpis").innerHTML =
+    `<div class="kpi"><b>${D.bandi.length}</b><span>bandi rilevanti</span></div>
+     <div class="kpi urgent"><b>${e7}</b><span>scadono entro 7 giorni</span></div>
+     <div class="kpi"><b>${e30}</b><span>entro 30 giorni</span></div>
+     <div class="kpi"><b>${verdi}</b><span>con almeno un 🟢</span></div>`;
+
+  const tl = [];
+  lista.forEach(b => (b.date.length ? b.date : []).forEach(d => {
+    const g = Math.round((new Date(d+"T12:00:00") - new Date(D.aggiornato+"T12:00:00"))/864e5);
+    tl.push({d, g, b});
+  }));
+  tl.sort((a,b) => a.d.localeCompare(b.d));
+  document.getElementById("timeline").innerHTML = tl.length ? tl.map(x =>
+    `<div class="tl"><span class="d">${fmt(x.d)}</span><span class="days ${x.g<=7?"u":x.g<=30?"s":""}">${x.g} gg</span>
+     <span><a href="${esc(x.b.link)}" target="_blank" rel="noopener">${esc(x.b.titolo)}</a> <span class="meta">· ${esc(x.b.ente)}</span></span></div>`).join("")
+    : `<div class="empty">Nessuna scadenza datata per questo filtro.</div>`;
+
+  document.getElementById("grid").innerHTML = lista.length ? lista.map(b => {
+    const sem = D.soggetti.map(n => {
+      const s = b.semafori[n]; if (!s) return "";
+      if (nascondiRossi && s.semaforo.includes("🔴")) return "";
+      return `<details><summary><span>${esc(short[n])}</span><span class="pill ${cls(s.semaforo)}">${s.semaforo} ${lab(s.semaforo)}</span></summary><p>${esc(s.motivo)}</p></details>`;
+    }).join("");
+    const scad = b.giorni === null ? "Sportello aperto" : `Prossima scadenza ${fmt(b.prossima)} · <b>${b.giorni} gg</b>`;
+    return `<article class="card"><h3>${esc(b.titolo)}</h3>
+      <div class="meta">${esc(b.ente)}<br>${scad}</div>
+      ${b.contributo ? `<div class="money">${esc(b.contributo)}</div>` : ""}
+      <div class="sem">${sem}</div>
+      <a class="open" href="${esc(b.link)}" target="_blank" rel="noopener">Apri il bando ↗</a></article>`;
+  }).join("") : `<div class="empty">Nessun bando 🟢/🟡 per questo soggetto.</div>`;
+
+  document.getElementById("scartati").innerHTML = D.scartati.map(t => `<li>${esc(t)}</li>`).join("") || "<li>Nessuno</li>";
+  document.getElementById("risolvere").innerHTML = D.da_risolvere.map(t => `<li>${esc(t)}</li>`).join("") || "<li>Nessuno</li>";
+  document.getElementById("foot").textContent = `Generata il ${D.generato} dal monitoraggio automatico. I semafori sono istruttorie preliminari: verificare sempre il bando ufficiale.`;
+}
+function filtri(){
+  const f = document.getElementById("filters");
+  const voci = [["tutti","Tutti"], ...D.soggetti.map(s => [s, short[s]])];
+  f.innerHTML = voci.map(([v,t]) => `<button class="chip" data-v="${esc(v)}" aria-pressed="${v===filtro}">${esc(t)}</button>`).join("")
+    + `<label class="toggle"><input type="checkbox" id="nr"> Nascondi 🔴 nelle schede</label>`;
+  f.querySelectorAll(".chip").forEach(c => c.onclick = () => {
+    filtro = c.dataset.v; f.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === c)); render();
+  });
+  const nr = document.getElementById("nr"); nr.checked = nascondiRossi;
+  nr.onchange = () => { nascondiRossi = nr.checked; render(); };
+}
+filtri(); render();
+</script>
+</body>
+</html>
