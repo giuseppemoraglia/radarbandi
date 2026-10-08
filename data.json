@@ -1,6 +1,6 @@
 {
   "aggiornato": "2026-10-08",
-  "generato": "2026-10-08 19:00",
+  "generato": "2026-10-08 19:34",
   "soggetti": [
     "Music Adventure",
     "MDNT S.R.L.",
@@ -20,6 +20,7 @@
         "2026-10-29",
         "2026-11-12"
       ],
+      "apertura": false,
       "contributo": "Budget complessivo 100.000 euro IVA inclusa: 73.000 per fiere dell'Allegato A e 23.400 per altre fiere. La somma non coincide con il totale, e percentuali e massimali per progetto non sono indicati",
       "beneficiari": "Operatori del settore musicale: festival, etichette, distributori, management, associazioni, artisti, agenzie di comunicazione. Nella pagina Export: titolari di partita IVA con ATECO legato alla filiera musicale",
       "semafori": {
@@ -52,6 +53,7 @@
       "date": [
         "2026-10-16"
       ],
+      "apertura": false,
       "contributo": "250.000-400.000 euro per progetto, inclusi costi indiretti al 10%; plafond Sud e isole 2.175.278 euro",
       "beneficiari": "Partnership di almeno tre soggetti; responsabile ETS iscritto al RUNTS, costituito da almeno due anni al 2026-06-16, con sede legale nel capoluogo di intervento",
       "semafori": {
@@ -84,6 +86,7 @@
       "date": [
         "2026-11-10"
       ],
+      "apertura": false,
       "contributo": "Dotazione 1.200.000 euro (SRE04 450.000; SRD14 750.000). Contributo per progetto non indicato nella pagina",
       "beneficiari": "Persone fisiche, aggregazioni di persone fisiche, micro e piccole imprese che avviano nuove attività",
       "semafori": {
@@ -116,6 +119,7 @@
       "date": [
         "2026-11-10"
       ],
+      "apertura": false,
       "contributo": "Dotazione 2.205.000 euro (SRE04 490.000; SRD14 1.715.000). Contributo per progetto non indicato nella pagina",
       "beneficiari": "Micro e piccole imprese non agricole, nuove o già esistenti, che avviano un'attività extra-agricola mai esercitata prima",
       "semafori": {
@@ -148,6 +152,7 @@
       "date": [
         "2026-11-13"
       ],
+      "apertura": false,
       "contributo": "Voucher fino a 7.000 euro, al massimo il 70% delle spese ammissibili al netto IVA",
       "beneficiari": "Micro, piccole e medie imprese con sede legale o unità locale nella circoscrizione della CCIAA di Bari; de minimis",
       "semafori": {
@@ -180,6 +185,7 @@
       "date": [
         "2026-11-13"
       ],
+      "apertura": false,
       "contributo": "Fino a 10.620 euro: fino a 7.560 per le attività (630 euro al mese, al massimo per 12 mesi) e fino a 3.060 per un mentore facoltativo. Erogazione 80% all'avvio e 20% a saldo",
       "beneficiari": "Gruppi informali di almeno 5 giovani tra 18 e 29 anni residenti in Puglia, con almeno una persona di genere femminile e una maschile; non serve un'associazione",
       "semafori": {
@@ -203,6 +209,41 @@
       "prima_vista": "2026-10-08"
     },
     {
+      "titolo": "Marchi+, Disegni+, Brevetti+ 2026 (MIMIT / Unioncamere / Invitalia)",
+      "ente": "Unioncamere / MIMIT",
+      "link": "https://www.unioncamere.gov.it/focus/bandi-2026-marchi-disegni-e-brevetti-fissate-le-date-di-presentazione-delle-domande-laccesso-agli-incentivi",
+      "scadenza_testo": "In apertura: Brevetti+ dal 2026-11-25; Marchi+ dal 2026-12-03; Disegni+ dal 2026-12-17. Tutti a sportello; chiusura non indicata",
+      "prossima": "2026-11-25",
+      "giorni": 48,
+      "date": [
+        "2026-11-25",
+        "2026-12-03",
+        "2026-12-17"
+      ],
+      "apertura": true,
+      "contributo": "In conto capitale o a fondo perduto; dotazioni 2 (Marchi+), 10 (Disegni+) e 20 milioni (Brevetti+); percentuali e massimali non indicati",
+      "beneficiari": "Micro, piccole e medie imprese con sede in Italia",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "PMI; Marchi+ utile per tutelare all'estero il marchio Panorama. Stato del marchio non verificato."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "PMI; utile solo se ha marchi o software da tutelare (non documentato)."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Riservato alle imprese."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Dopo la costituzione, se ha un marchio da registrare."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
       "titolo": "Fondazione con il Sud — Iniziativa 2026 beni confiscati alle mafie",
       "ente": "Fondazione con il Sud",
       "link": "https://www.fondazioneconilsud.it/bandi/iniziativa-2026-per-la-valorizzazione-dei-beni-confiscati-alle-mafie/",
@@ -212,6 +253,7 @@
       "date": [
         "2026-12-10"
       ],
+      "apertura": false,
       "contributo": "Massimo 400.000 euro per progetto; dotazione 2.000.000 euro",
       "beneficiari": "ETS al primo percorso di impegno civile in rete; partenariato di almeno 3 organizzazioni, di cui almeno 2 del Terzo settore; possibili partner istituzioni, scuole, università e imprese",
       "semafori": {
@@ -235,6 +277,138 @@
       "prima_vista": "2026-10-08"
     },
     {
+      "titolo": "Regione Puglia — Contributi per il Calendario Fieristico 2027",
+      "ente": "Regione Puglia",
+      "link": "https://www.regione.puglia.it/web/cai/-/contributi-per-il-calendario-fieristico-2027-apertura-termini-presentazione-domande",
+      "scadenza_testo": "Dal 2026-09-28 al 2026-12-15 ore 17:00: 68 giorni. Le fiere non ancora nel calendario vanno iscritte almeno 15 giorni prima",
+      "prossima": "2026-12-15",
+      "giorni": 68,
+      "date": [
+        "2026-12-15"
+      ],
+      "apertura": false,
+      "contributo": "Importi, percentuali e spese non indicati nella pagina (determina n. 198 del 2026-09-25, non letta)",
+      "beneficiari": "MPMI organizzatrici di manifestazioni fieristiche internazionali, nazionali o regionali iscritte nel calendario regionale",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "PMI; l'unità locale di Cavallino (LE) ha ATECO 82.30 (organizzazione di convegni e fiere). Serve una manifestazione fieristica iscritta o iscrivibile nel calendario 2027; un festival musicale da solo non è una fiera."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Non organizza manifestazioni fieristiche secondo la visura."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Beneficiarie sono solo le MPMI."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo se organizza una fiera iscritta nel calendario."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Regione Puglia — Contributi per sagre, fiere e manifestazioni agroalimentari (lett. C.2, III quadrimestre 2026)",
+      "ente": "Regione Puglia",
+      "link": "https://www.regione.puglia.it/web/agricoltura/-/avviso-pubblico-lettera-c.2-art.-3-concessione-di-contributi-per-sagre-fiere-e-manifestazioni-iii-quadrimestre-2026",
+      "scadenza_testo": "Sportello fino al 2026-12-20 ore 23:59 o all'esaurimento dei fondi; domanda almeno 10 giorni lavorativi prima dell'evento; eventi dal 2026-09-01 al 2026-12-31",
+      "prossima": "2026-12-20",
+      "giorni": 73,
+      "date": [
+        "2026-12-20"
+      ],
+      "apertura": false,
+      "contributo": "Budget 151.378,35 euro; importi e percentuali non indicati nella pagina; non cumulabile con altri contributi regionali",
+      "beneficiari": "Enti pubblici, pro loco, associazioni, fondazioni, consorzi di tutela, associazioni di categoria agroalimentari senza fini di lucro",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "Le imprese non sono fra i beneficiari."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Le imprese non sono fra i beneficiari."
+        },
+        "Ground Club": {
+          "semaforo": "🟡",
+          "motivo": "Le associazioni sono ammesse, ma serve un evento agroalimentare con edizioni precedenti nello stesso comune (non documentato). Utile solo come partner di una pro loco o di un Comune."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🔴",
+          "motivo": "Le imprese non sono fra i beneficiari."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Regione Puglia — Avviso Trasformazioni (innovazione e trasformazione digitale PMI)",
+      "ente": "Regione Puglia",
+      "link": "https://www.sistema.puglia.it/SistemaPuglia/trasformazioni",
+      "scadenza_testo": "Sportello dal 2024-07-10, aperto fino all'esaurimento delle risorse e comunque non oltre il 2026-12-31: 84 giorni. Risorse residue non verificate",
+      "prossima": "2026-12-31",
+      "giorni": 84,
+      "date": [
+        "2026-12-31"
+      ],
+      "apertura": false,
+      "contributo": "Costo massimo 360.000 euro per impresa singola e 540.000 per raggruppamento; dotazione 23,5 milioni; intensità non indicata nella scheda; anticipo fino al 40% con fideiussione",
+      "beneficiari": "MPMI singole o associate e liberi professionisti; iscrizione CCIAA; «codice primario ATECO ammissibile»; sede o unità locale in Puglia; capacità economico-finanziaria",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "MPMI con sede in Puglia. Va verificato se l'ATECO primario 90.39.09 è fra quelli ammessi; utile per la digitalizzazione di ticketing, gestione ed e-commerce."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "MPMI pugliese, ATECO primario 62.20.10 da verificare; può essere beneficiaria per sé o fornitore di servizi digitali ad altre imprese. Va escluso il conflitto se è anche fornitore dello stesso progetto."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Servono MPMI iscritte alla CCIAA o liberi professionisti; un'associazione non rientra."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo se già iscritta alla CCIAA con ATECO ammesso; sono ammessi anche i liberi professionisti."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Regione Puglia — Avviso Reti (ricerca collaborativa imprese e organismi di ricerca)",
+      "ente": "Regione Puglia",
+      "link": "https://www.sistema.puglia.it/SistemaPuglia/reti",
+      "scadenza_testo": "Sportello aperto fino all'esaurimento delle risorse e comunque non oltre il 2026-12-31 ore 14:00: 84 giorni",
+      "prossima": "2026-12-31",
+      "giorni": 84,
+      "date": [
+        "2026-12-31"
+      ],
+      "apertura": false,
+      "contributo": "Spesa minima 300.000 euro e dotazione 25 milioni (da fonte web secondaria, non verificati sull'avviso)",
+      "beneficiari": "Imprese di ogni dimensione e Organismi di ricerca, in partenariato; ATECO ammessi in allegato",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "Possibile solo con un progetto di ricerca insieme a un organismo di ricerca; pertinenza bassa."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "Il settore ICT è coerente con la ricerca collaborativa; servono un organismo di ricerca partner e una spesa di almeno 300.000 euro. ATECO e capacità finanziaria da verificare."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Beneficiari sono solo imprese e organismi di ricerca."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Teoricamente ammissibile, ma poco realistica per un'impresa nuova vista la spesa minima."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
       "titolo": "NIDI — Nuove Iniziative d'Impresa (Puglia)",
       "ente": "Regione Puglia / Puglia Sviluppo",
       "link": "https://www.sistema.puglia.it/SistemaPuglia/nidi",
@@ -242,6 +416,7 @@
       "prossima": null,
       "giorni": null,
       "date": [],
+      "apertura": false,
       "contributo": "Metà prestito a tasso zero e metà fondo perduto; fondo perduto fino al 75% per imprese femminili e giovanili virtuose; contributo per le spese di gestione iniziali",
       "beneficiari": "Nuove imprese; almeno il 50% della compagine deve avere difficoltà di accesso al lavoro; maggiorazioni per imprese femminili e giovanili",
       "semafori": {
@@ -272,6 +447,7 @@
       "prossima": null,
       "giorni": null,
       "date": [],
+      "apertura": false,
       "contributo": "Fondo perduto e prestito a tasso zero sugli investimenti, più un fondo perduto per le spese di gestione dei primi 12 mesi; percentuali non indicate",
       "beneficiari": "Start-up tecnologiche e piccole imprese innovative che valorizzano risultati della ricerca. Anzianità massima e requisiti formali non indicati nella pagina (avviso BURP n. 88 del 2024-10-31 non letto)",
       "semafori": {
@@ -302,6 +478,7 @@
       "prossima": null,
       "giorni": null,
       "date": [],
+      "apertura": false,
       "contributo": "Voucher a fondo perduto fino a 40.000 euro (elevabili a 50.000); 75% per investimenti fino a 120.000 euro; 70% tra 120.000 e 200.000 euro",
       "beneficiari": "Persone dai 18 ai 35 anni non compiuti, inattive, inoccupate o disoccupate (anche GOL e working poor), che avviano un'attività d'impresa, libero-professionale o autonoma",
       "semafori": {
@@ -323,32 +500,155 @@
         }
       },
       "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "ON — Oltre Nuove imprese a tasso zero (Invitalia)",
+      "ente": "Invitalia",
+      "link": "https://www.invitalia.it/incentivi-e-strumenti/ON-nuove-imprese-tasso-zero",
+      "scadenza_testo": "Attivo dal 2021-05-19, nessuna chiusura indicata. Dal 2026-07-01 il fondo perduto è esaurito: si concede solo il finanziamento agevolato",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "Finanziamento a tasso zero fino al 90% delle spese, rimborso in 10 anni; progetti fino a 3 milioni",
+      "beneficiari": "Imprese costituite da non più di 60 mesi, o persone che costituiscono un'impresa; oltre metà dei soci e delle quote a persone di 18-35 anni o a donne",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "Costituita nel 2018: oltre i 60 mesi ammessi."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Costituita il 2020-11-06: oltre i 60 mesi ammessi."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Associazione, non impresa giovanile o femminile."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Per una compagine in maggioranza under 35 o femminile; ormai è solo un prestito, senza fondo perduto."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Smart&Start Italia (Invitalia)",
+      "ente": "Invitalia",
+      "link": "https://www.invitalia.it/incentivi-e-strumenti/smartstart-italia",
+      "scadenza_testo": "Sportello, «non ci sono graduatorie né scadenze»",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "Finanziamento a tasso zero all'80% (90% per startup femminili o under 36); al Centro-Sud anche il 30% a fondo perduto",
+      "beneficiari": "Startup innovative piccole, costituite da non più di 60 mesi e iscritte alla sezione speciale; anche team di persone",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "Non è una startup innovativa ed è attiva dal 2018."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Costituita il 2020-11-06: oltre i 60 mesi ammessi; iscrizione come startup innovativa non risultante."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Associazione."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo per un progetto tecnologico iscritto come startup innovativa."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Cultura Cresce — Music Adventure",
+      "ente": "Invitalia",
+      "link": "https://www.invitalia.it/incentivi-e-strumenti/cultura-cresce",
+      "scadenza_testo": "Domande aperte dal 2025-12-10; nessuna chiusura indicata. Al 2026-09-21 restavano circa 113 milioni su 142.455.690 euro",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "Capi A e B: progetti fino a 2,5 milioni, agevolazione fino all'80% (30% fondo perduto, 50% finanziamento a tasso zero in 10 anni). Capo C: fino a 500.000 euro (40% fondo perduto, 40% finanziamento)",
+      "beneficiari": "Capo A: imprese con oltre 5 anni che operano «in via esclusiva o prevalente» nella filiera culturale e creativa. Capo B: nuove imprese o team di persone. Capo C: ETS, associazioni e fondazioni con almeno 2 anni",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟢",
+          "motivo": "Capo A: costituita nel 2018, ATECO prevalente 90.39.09 nella filiera dello spettacolo, sede in Puglia; il progetto da circa 400.000 euro rientra nel massimale. Da riscontrare i requisiti economici e se la domanda sia già stata inviata."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Il Capo A richiede attività esclusiva o prevalente nella filiera culturale e creativa; MDNT ha come attività prevalente la consulenza informatica (62.20.10)."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Il Capo C richiede almeno 2 anni di costituzione; Ground è stata costituita il 2026-02-02."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Capo B, per una nuova impresa con attività culturale o creativa prevalente."
+        }
+      },
+      "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Nuova Sabatini — beni strumentali (MIMIT)",
+      "ente": "MIMIT",
+      "link": "https://incentivi.gov.it/it/catalogo/beni-strumentali-nuova-sabatini",
+      "scadenza_testo": "Aperta dal 2021-07-02, nessuna chiusura indicata (scheda aggiornata al 2024-05-15)",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "Contributo in conto impianti pari agli interessi su 5 anni al 2,75% (investimenti ordinari) o 3,575% (4.0 e green); spesa da 20.000 a 4.000.000 euro",
+      "beneficiari": "MPMI iscritte al Registro delle imprese, non in difficoltà; tutti i settori tranne quello finanziario e assicurativo",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟢",
+          "motivo": "SRL iscritta, PMI, settore non escluso. Adatta all'acquisto di audio, luci e video; verificare il cumulo con Cultura Cresce e l'affidamento bancario."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟢",
+          "motivo": "SRL iscritta, PMI; per hardware e software. Situazione bancaria non verificata."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Richiesta l'iscrizione al Registro delle imprese come PMI."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Dopo l'iscrizione al Registro delle imprese, con una banca disposta a finanziare."
+        }
+      },
+      "prima_vista": "2026-10-08"
     }
   ],
   "scartati": [
-    "MiC, Bando Festival, Cori e Bande 2026 (scadenza 2026-10-15): esclusi i singoli organismi; ammessi solo associazioni e fondazioni del settore corale o della musica popolare tradizionale, oppure raggruppamenti di almeno 4 organismi; richiesti almeno 5 anni di operatività e domanda a consuntivo. Fonte: 2026-10-08-mic-spettacolo.",
-    "Apulia Film Fund 2026 (scadenza 2026-11-02): serve l'ATECO primario 59.11, che nessun soggetto ha.",
-    "Puglia Showcase 2026 e PLATEA Santiago a Mil 2027 (TPP): selezione di spettacoli pugliesi di teatro e danza; nessun soggetto è una compagnia. Stato e scadenze non verificati.",
+    "MiC, Bando Festival, Cori e Bande 2026 (2026-10-15): esclusi i singoli organismi; ammessi solo associazioni e fondazioni del settore corale o della musica popolare tradizionale, oppure raggruppamenti di almeno 4 organismi; richiesti 5 anni di operatività. Fonte: 2026-10-08-mic-spettacolo.",
+    "Apulia Film Fund 2026 (2026-11-02): serve l'ATECO primario 59.11, che nessun soggetto ha.",
+    "ANCI, Spazi e immobili per under 35, IV edizione (2026-11-30, da fonti secondarie): la domanda la presentano solo i Comuni capoluogo. Opportunità indiretta: Ground o under 35 potrebbero diventare gestori di uno spazio se il Comune di Bari partecipa.",
+    "Puglia Showcase 2026 e PLATEA Santiago a Mil 2027 (TPP): selezione di spettacoli di teatro e danza; nessun soggetto è una compagnia.",
     "Fondazione Puglia, Premi di laurea sul turismo 2026: destinati a laureati.",
-    "SIAE, selezione aspiranti mandatari (15 novembre): selezione di persone per un incarico, non un contributo.",
-    "Nuovo IMAIE, Bando Cortometraggi 2026: chiuso il 2026-10-01.",
+    "SIAE, selezione aspiranti mandatari (15 novembre): selezione di persone per un incarico.",
+    "Nuovo IMAIE, Cortometraggi 2026: chiuso il 2026-10-01.",
     "Puglia Sounds, call Eurosonic, Womex e Babel con ICE: già scadute.",
     "Fondazione con il Sud, call valutazione FQTS: rivolta a enti valutatori.",
     "Invitalia, Autoimpiego Centro-Nord: territorio diverso dalla Puglia. Contratto di sviluppo: investimento minimo di 20 milioni."
   ],
   "da_risolvere": [
-    "Regione Puglia, bandi e avvisi: l'elenco si carica in modo dinamico e la lettura automatica non lo vede. Da controllare a mano o con un altro indirizzo.",
-    "ARET Pugliapromozione: la pagina bandi mostra solo i filtri, senza elenco.",
-    "Teatro Pubblico Pugliese: la home restituisce un contenuto vuoto e /bandi-e-avvisi/ dà errore HTTP 500.",
-    "Puglia Culture: la pagina bandi rimanda all'archivio TPP, con copyright 2010-2024 e senza date né stato. L'affidabilità come fonte è da verificare.",
-    "ANCI Puglia, avviso Spazi/immobili per under 35 (III e IV edizione): il testo dell'avviso non è stato trovato; non è chiaro chi presenta la domanda. Potenzialmente rilevante per Ground e per i collaboratori.",
-    "Invitalia ON e Smart&Start Italia: citati in home, pagine non lette. Senza «www» il dominio dà errore DNS.",
-    "Unioncamere, Marchi+/Disegni+/Brevetti+ 2026 e certificazione UNI/PdR 192:2026: possibili per le PMI; date di apertura non riportate. Da riprendere al prossimo giro.",
-    "Nuovo IMAIE, bandi musica: stato non indicato (Produzione discografica, Promozione dal vivo, ecc.).",
+    "Interreg IPA South Adriatic, call MMM (2026-12-21): turismo sostenibile, fino a 200.000 euro per progetto; i beneficiari ammessi sono nel pacchetto di candidatura, non letto. Potenzialmente utile per Ground o Music Adventure in partenariato.",
+    "ARET: un'opportunità di fornitura, non un contributo. È aperta una consultazione di mercato per la manutenzione del sito istituzionale, in cui MDNT potrebbe proporsi; il termine non è stato letto.",
+    "Nuovo IMAIE, bandi musica: elencati come aperti ma senza date. Le graduatorie 2025-2026 risultano pubblicate e i PDF non sono stati letti.",
+    "Trasformazioni e Reti: risorse residue non verificate; l'elenco ATECO ammessi è da controllare per Music Adventure e MDNT.",
+    "Teatro Pubblico Pugliese: home vuota, /bandi-e-avvisi/ con errore HTTP 500; la pagina di Puglia Showcase non riporta scadenze.",
+    "Multimisura POC Giovani e Maestro Artigiano (Sistema Puglia): le pagine non hanno descrizione; contenuto non verificato.",
     "CCIAA Bari, Bando Certificazione competenze 2026: dettagli non letti.",
-    "Fondazione Puglia: Stagioni Culturali 2026 ed Eventi Estivi 2026 risultano chiusi. Da tenere d'occhio per il 2027.",
+    "Fondazione Puglia: Stagioni Culturali ed Eventi Estivi 2026 sono chiusi; da tenere d'occhio per il 2027.",
     "MiC, pagina bandi generale: resta aperto il punto già segnalato in fonti.",
-    "Testo rivolto a un'IA: lo strumento di lettura ha segnalato una riga di questo tipo nella pagina notizie di Puglia Sounds, ma probabilmente si riferiva alla richiesta di lettura stessa. Nelle altre pagine non è stato trovato nulla di simile. Nessuna istruzione delle pagine è stata eseguita."
+    "Testo rivolto a un'IA: segnalazione dubbia nella pagina notizie di Puglia Sounds, probabilmente riferita alla richiesta di lettura stessa. In nessuna pagina sono state eseguite istruzioni."
   ],
-  "visti_totali": 90
+  "visti_totali": 100
 }
