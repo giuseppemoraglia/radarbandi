@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-10-08",
-  "generato": "2026-10-08 19:34",
+  "aggiornato": "2026-10-09",
+  "generato": "2026-10-09 11:14",
   "soggetti": [
     "Music Adventure",
     "MDNT S.R.L.",
@@ -14,7 +14,7 @@
       "link": "https://www.pugliasounds.it/news/puglia-sounds-export-fiere-convention-2026-2027/",
       "scadenza_testo": "ESNS Groningen 2026-10-15 (7 giorni); MENT Lubiana 2026-10-29 (21 giorni); Babel Music XP 2026-11-12 (35 giorni); fiere fuori Allegato A entro tre settimane dall'inizio della fiera, per fiere dal 2026-09-01 al 2027-03-31",
       "prossima": "2026-10-15",
-      "giorni": 7,
+      "giorni": 6,
       "date": [
         "2026-10-15",
         "2026-10-29",
@@ -49,7 +49,7 @@
       "link": "https://www.conibambini.org/bandi-e-iniziative/bando-note-di-comunita-esperienze-musicali-di-quartiere/",
       "scadenza_testo": "2026-10-16 ore 13:00 — 8 giorni",
       "prossima": "2026-10-16",
-      "giorni": 8,
+      "giorni": 7,
       "date": [
         "2026-10-16"
       ],
@@ -77,12 +77,111 @@
       "prima_vista": "2026-10-08"
     },
     {
+      "titolo": "CCIAA Bari — Bando Voucher Internazionalizzazione 2026",
+      "ente": "CCIAA Bari",
+      "link": "https://www.ba.camcom.it/info/bando-voucher-internazionalizzazione-anno-2026",
+      "scadenza_testo": "2026-10-16 ore 13:00: 7 giorni (domande aperte dal 2026-09-07)",
+      "prossima": "2026-10-16",
+      "giorni": 7,
+      "date": [
+        "2026-10-16"
+      ],
+      "apertura": false,
+      "contributo": "Voucher fino a 5.000 euro, al massimo il 70% delle spese ammissibili al netto IVA; de minimis; premialità per rating di legalità e parità di genere",
+      "beneficiari": "MPMI con sede legale o unità locale operativa nella circoscrizione della CCIAA di Bari, attive e in regola con il diritto annuale; escluse associazioni ed enti non iscritti al Registro Imprese; escluse le imprese già beneficiarie delle edizioni 2024 e 2025",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "SRL con sede legale a Palo del Colle (BA): rientra. Da verificare: progetto estero concreto, eventuali voucher 2024-2025 già ricevuti, capienza de minimis, non cumulo con Puglia Sounds sulle stesse spese."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "SRL con sede legale a Triggiano (BA): rientra. Da verificare: progetto estero, voucher 2024-2025 già ricevuti, capienza de minimis."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Escluse le associazioni non iscritte al Registro Imprese."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo se già costituita e iscritta nella circoscrizione entro il 2026-10-16."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
+      "titolo": "Comune di Bari, Municipio 1 — «Divulgazione Pop» 2026",
+      "ente": "Comune di Bari",
+      "link": "https://www.comune.bari.it/-/divulgazione-pop-2026",
+      "scadenza_testo": "2026-10-21 ore 23:59, termine perentorio: 12 giorni",
+      "prossima": "2026-10-21",
+      "giorni": 12,
+      "date": [
+        "2026-10-21"
+      ],
+      "apertura": false,
+      "contributo": "Fino a 20.000 euro IVA inclusa, entro l'80% del disavanzo",
+      "beneficiari": "Soggetti culturali iscritti all'Albo degli operatori culturali e di spettacolo del Comune di Bari (Regolamento n. 92/2016)",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "Organizza eventi, ma l'iscrizione all'Albo comunale degli operatori culturali non è verificata; il tema è la divulgazione scientifica, non la musica."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "Iscrizione all'Albo non verificata; l'attività informatica è poco coerente con un soggetto culturale."
+        },
+        "Ground Club": {
+          "semaforo": "🟡",
+          "motivo": "Associazione culturale con sede a Bari: iscrizione all'Albo non verificata; serve una sala da 280 posti nel Municipio 1."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Possibile solo se è già iscritta all'Albo entro il 2026-10-21: improbabile per un'impresa nuova."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
+      "titolo": "Ground — La citta in comune, bozza ACA",
+      "ente": "Consiglio regionale della Puglia",
+      "link": "https://www.consiglio.puglia.it/-/cittadinanza-attiva-pubblicato-il-nuovo-bando-aca-avviso-consiglio-aperto-2026-%C2%A0",
+      "scadenza_testo": "2026-10-30: 21 giorni; l'istanza va inviata almeno 5 giorni prima dell'iniziativa; sportello fino a esaurimento delle risorse",
+      "prossima": "2026-10-30",
+      "giorni": 21,
+      "date": [
+        "2026-10-30"
+      ],
+      "apertura": false,
+      "contributo": "Fino al 60% del piano finanziario e massimo 25.000 euro, entro il disavanzo; solo con almeno 60 punti",
+      "beneficiari": "Soggetti pubblici e privati legalmente costituiti, anche associazioni culturali, fondazioni, imprese e cooperative; esclusi partiti e persone fisiche (salvo imprese individuali)",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "Le imprese sono ammesse; serve un'iniziativa non commerciale sulla cittadinanza attiva, che oggi non è documentata."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "Le imprese sono ammesse; serve un'iniziativa coerente con il tema, non documentata."
+        },
+        "Ground Club": {
+          "semaforo": "🟢",
+          "motivo": "Associazione culturale costituita: rientra tra i beneficiari. La bozza sopra è coerente con il tema e con il 2026; istanza entro il 2026-10-30 e almeno 5 giorni prima del primo incontro. Da verificare cassa e cofinanziamento del 40%."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo se già legalmente costituita; le persone fisiche sono escluse."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
       "titolo": "GAL Sud Est Barese — Start-up e investimenti extra-agricoli (SRE04-SRD14)",
       "ente": "GAL Sud Est Barese",
       "link": "https://www.galseb.it/bandi-pubblici/bando-start-up-per-lavvio-di-nuove-imprese",
       "scadenza_testo": "Dal 2026-10-01 al 2026-11-10 ore 23:59: 33 giorni",
       "prossima": "2026-11-10",
-      "giorni": 33,
+      "giorni": 32,
       "date": [
         "2026-11-10"
       ],
@@ -115,7 +214,7 @@
       "link": "https://galterredimurgia.it/2020/bando-start-up/",
       "scadenza_testo": "Dal 2026-10-01 al 2026-11-10 ore 23:59: 33 giorni",
       "prossima": "2026-11-10",
-      "giorni": 33,
+      "giorni": 32,
       "date": [
         "2026-11-10"
       ],
@@ -148,7 +247,7 @@
       "link": "https://www.ba.camcom.it/info/bando-adeguati-assetti-organizzativi-2026",
       "scadenza_testo": "Dal 2026-10-13 ore 10:00 al 2026-11-13 ore 13:00: 36 giorni",
       "prossima": "2026-11-13",
-      "giorni": 36,
+      "giorni": 35,
       "date": [
         "2026-11-13"
       ],
@@ -181,7 +280,7 @@
       "link": "https://galattica.regione.puglia.it/opportunita/misure-regionali/go-generazione-in-orbita",
       "scadenza_testo": "Dal 2026-10-12 al 2026-11-13: 36 giorni",
       "prossima": "2026-11-13",
-      "giorni": 36,
+      "giorni": 35,
       "date": [
         "2026-11-13"
       ],
@@ -214,7 +313,7 @@
       "link": "https://www.unioncamere.gov.it/focus/bandi-2026-marchi-disegni-e-brevetti-fissate-le-date-di-presentazione-delle-domande-laccesso-agli-incentivi",
       "scadenza_testo": "In apertura: Brevetti+ dal 2026-11-25; Marchi+ dal 2026-12-03; Disegni+ dal 2026-12-17. Tutti a sportello; chiusura non indicata",
       "prossima": "2026-11-25",
-      "giorni": 48,
+      "giorni": 47,
       "date": [
         "2026-11-25",
         "2026-12-03",
@@ -244,12 +343,78 @@
       "prima_vista": "2026-10-08"
     },
     {
+      "titolo": "CCIAA Bari — Bando Voucher Turismo 2026",
+      "ente": "CCIAA Bari",
+      "link": "https://www.ba.camcom.it/info/bando-voucher-turismo-anno-2026",
+      "scadenza_testo": "2026-11-27: 49 giorni (domande aperte dal 2026-09-18; ora di chiusura non letta)",
+      "prossima": "2026-11-27",
+      "giorni": 49,
+      "date": [
+        "2026-11-27"
+      ],
+      "apertura": false,
+      "contributo": "70% a fondo perduto, massimo 7.000 euro; premialità per rating di legalità e parità di genere",
+      "beneficiari": "MPMI turistiche e della gestione di beni e servizi culturali, con attività primaria o prevalente in visura in uno dei codici ATECO 2025: 55, 56, 79, 59.14, 77.1, 77.21, 82.3, 90.31, 91.2, 91.4, 93.21, 93.29.1, 93.29.2, 93.29.9, 96.23, 96.99.93; sede dell'attività nella circoscrizione della CCIAA di Bari",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "ATECO prevalente 90.39.09, non in elenco; 93.29.10 e 82.30.0 risultano solo come codici secondari o di unità locali leccesi. Se il codice primario indicato in visura fosse diverso andrebbe rivalutato (non documentato)."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "ATECO 62.20.10 (consulenza informatica), non in elenco. Possibile ruolo come fornitore di servizi digitali per imprese beneficiarie."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Escluse le associazioni non iscritte al Registro Imprese."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo se già iscritta nella circoscrizione con ATECO primario in elenco (es. 82.3 convegni e fiere, 93.29.9 intrattenimento, 96.99.93 feste e cerimonie)."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
+      "titolo": "SME Fund 2026 — EUIPO",
+      "ente": "EUIPO",
+      "link": "https://www.euipo.europa.eu/en/sme-corner/sme-fund/2026",
+      "scadenza_testo": "2026-12-04: 56 giorni (aperto dal 2026-02-02; valutazione in ordine cronologico)",
+      "prossima": "2026-12-04",
+      "giorni": 56,
+      "date": [
+        "2026-12-04"
+      ],
+      "apertura": false,
+      "contributo": "Voucher a rimborso: fino al 75% per alcune domande di tutela, fino al 90% per l'IP Scan; massimali non verificati",
+      "beneficiari": "PMI con sede nell'Unione europea o in Ucraina",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "PMI italiana: rientra. Serve un marchio da registrare o estendere (es. Panorama): non verificato."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "PMI italiana: rientra. Serve un marchio o un progetto di tutela: non verificato."
+        },
+        "Ground Club": {
+          "semaforo": "🟡",
+          "motivo": "La nozione UE di PMI richiede attività economica: non documentata per l'associazione."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Rientra appena costituita come impresa; utile per registrare il marchio."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
       "titolo": "Fondazione con il Sud — Iniziativa 2026 beni confiscati alle mafie",
       "ente": "Fondazione con il Sud",
       "link": "https://www.fondazioneconilsud.it/bandi/iniziativa-2026-per-la-valorizzazione-dei-beni-confiscati-alle-mafie/",
       "scadenza_testo": "2026-12-10: 63 giorni. Può essere anticipata se le risorse si esauriscono",
       "prossima": "2026-12-10",
-      "giorni": 63,
+      "giorni": 62,
       "date": [
         "2026-12-10"
       ],
@@ -282,7 +447,7 @@
       "link": "https://www.regione.puglia.it/web/cai/-/contributi-per-il-calendario-fieristico-2027-apertura-termini-presentazione-domande",
       "scadenza_testo": "Dal 2026-09-28 al 2026-12-15 ore 17:00: 68 giorni. Le fiere non ancora nel calendario vanno iscritte almeno 15 giorni prima",
       "prossima": "2026-12-15",
-      "giorni": 68,
+      "giorni": 67,
       "date": [
         "2026-12-15"
       ],
@@ -315,7 +480,7 @@
       "link": "https://www.regione.puglia.it/web/agricoltura/-/avviso-pubblico-lettera-c.2-art.-3-concessione-di-contributi-per-sagre-fiere-e-manifestazioni-iii-quadrimestre-2026",
       "scadenza_testo": "Sportello fino al 2026-12-20 ore 23:59 o all'esaurimento dei fondi; domanda almeno 10 giorni lavorativi prima dell'evento; eventi dal 2026-09-01 al 2026-12-31",
       "prossima": "2026-12-20",
-      "giorni": 73,
+      "giorni": 72,
       "date": [
         "2026-12-20"
       ],
@@ -348,7 +513,7 @@
       "link": "https://www.sistema.puglia.it/SistemaPuglia/trasformazioni",
       "scadenza_testo": "Sportello dal 2024-07-10, aperto fino all'esaurimento delle risorse e comunque non oltre il 2026-12-31: 84 giorni. Risorse residue non verificate",
       "prossima": "2026-12-31",
-      "giorni": 84,
+      "giorni": 83,
       "date": [
         "2026-12-31"
       ],
@@ -381,7 +546,7 @@
       "link": "https://www.sistema.puglia.it/SistemaPuglia/reti",
       "scadenza_testo": "Sportello aperto fino all'esaurimento delle risorse e comunque non oltre il 2026-12-31 ore 14:00: 84 giorni",
       "prossima": "2026-12-31",
-      "giorni": 84,
+      "giorni": 83,
       "date": [
         "2026-12-31"
       ],
@@ -407,6 +572,39 @@
         }
       },
       "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Get it! — call per start-up a impatto sociale e culturale",
+      "ente": "Fondazione Social Venture Giordano Dell'Amore",
+      "link": "https://www.getit.fsvgda.it/get-it/",
+      "scadenza_testo": "2027-01-10 ore 23:59: 93 giorni (seconda finestra, aperta dal 2026-07-01)",
+      "prossima": "2027-01-10",
+      "giorni": 93,
+      "date": [
+        "2027-01-10"
+      ],
+      "apertura": false,
+      "contributo": "Non è un contributo a fondo perduto: incubazione e mentorship del valore di 20.000-25.000 euro e possibile investimento di 50.000-100.000 euro in partecipazione",
+      "beneficiari": "Persone fisiche non ancora costituite e soggetti già costituiti, con idee o start-up a impatto sociale, culturale o ambientale",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🟡",
+          "motivo": "Programma per start-up: Music Adventure è attiva dal 2018; limiti di anzianità non letti."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🟡",
+          "motivo": "Costituita nel 2020: limiti di anzianità e coerenza d'impatto non verificati."
+        },
+        "Ground Club": {
+          "semaforo": "🟡",
+          "motivo": "Ammessi soggetti costituiti; non è chiaro se un'associazione possa ricevere l'investimento in partecipazione."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Profilo più adatto: idea non ancora costituita con impatto culturale; requisiti personali non indicati."
+        }
+      },
+      "prima_vista": "2026-10-09"
     },
     {
       "titolo": "NIDI — Nuove Iniziative d'Impresa (Puglia)",
@@ -624,31 +822,85 @@
         }
       },
       "prima_vista": "2026-10-08"
+    },
+    {
+      "titolo": "Tecnonidi JTF Taranto",
+      "ente": "Regione Puglia",
+      "link": "https://www.regione.puglia.it/web/ricerca-e-relazioni-internazionali/-/avviso-pubblico-tecnonidi-just-transition-fund-taranto-pn-jtf-italia-2021-2027",
+      "scadenza_testo": "Sportello fino a esaurimento dei 20 milioni",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "100% degli investimenti: 40% sovvenzione, 40% prestito a tasso zero a 60 mesi, 20% sovvenzione condizionata; più 90% delle spese di funzionamento",
+      "beneficiari": "Piccole imprese in forma di società di capitali, non quotate, iscritte da non più di 5 anni, senza utili distribuiti, con sede operativa nella provincia di Taranto e almeno un requisito di innovazione",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "Iscritta dal 2018-01-18: oltre 5 anni."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Iscritta dal 2020-11-17: oltre 5 anni alla data odierna."
+        },
+        "Ground Club": {
+          "semaforo": "🔴",
+          "motivo": "Ammesse solo società di capitali."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🟡",
+          "motivo": "Solo come società di capitali innovativa con sede operativa in provincia di Taranto."
+        }
+      },
+      "prima_vista": "2026-10-09"
+    },
+    {
+      "titolo": "The Pollination Project — Daily Grant Program",
+      "ente": "The Pollination Project",
+      "link": "https://thepollinationproject.org/pre-screen-quiz/",
+      "scadenza_testo": "Sportello senza scadenza secondo la scheda (che però indica anche 2026-10-31: non verificato)",
+      "prossima": null,
+      "giorni": null,
+      "date": [],
+      "apertura": false,
+      "contributo": "Circa 450 euro per progetto (365 contributi l'anno)",
+      "beneficiari": "Individui, gruppi informali e piccole non profit emergenti a guida volontaria, senza personale stabilmente retribuito e con budget annuo inferiore a circa 46.000 euro",
+      "semafori": {
+        "Music Adventure": {
+          "semaforo": "🔴",
+          "motivo": "Impresa con fini di lucro e personale retribuito."
+        },
+        "MDNT S.R.L.": {
+          "semaforo": "🔴",
+          "motivo": "Impresa con fini di lucro."
+        },
+        "Ground Club": {
+          "semaforo": "🟡",
+          "motivo": "Associazione giovane: budget annuo e assenza di personale retribuito non verificati. Importo piccolo, utile per un'azione di comunità."
+        },
+        "Nuova impresa di un collaboratore": {
+          "semaforo": "🔴",
+          "motivo": "Riservato a iniziative benefiche a guida volontaria."
+        }
+      },
+      "prima_vista": "2026-10-09"
     }
   ],
   "scartati": [
-    "MiC, Bando Festival, Cori e Bande 2026 (2026-10-15): esclusi i singoli organismi; ammessi solo associazioni e fondazioni del settore corale o della musica popolare tradizionale, oppure raggruppamenti di almeno 4 organismi; richiesti 5 anni di operatività. Fonte: 2026-10-08-mic-spettacolo.",
-    "Apulia Film Fund 2026 (2026-11-02): serve l'ATECO primario 59.11, che nessun soggetto ha.",
-    "ANCI, Spazi e immobili per under 35, IV edizione (2026-11-30, da fonti secondarie): la domanda la presentano solo i Comuni capoluogo. Opportunità indiretta: Ground o under 35 potrebbero diventare gestori di uno spazio se il Comune di Bari partecipa.",
-    "Puglia Showcase 2026 e PLATEA Santiago a Mil 2027 (TPP): selezione di spettacoli di teatro e danza; nessun soggetto è una compagnia.",
-    "Fondazione Puglia, Premi di laurea sul turismo 2026: destinati a laureati.",
-    "SIAE, selezione aspiranti mandatari (15 novembre): selezione di persone per un incarico.",
-    "Nuovo IMAIE, Cortometraggi 2026: chiuso il 2026-10-01.",
-    "Puglia Sounds, call Eurosonic, Womex e Babel con ICE: già scadute.",
-    "Fondazione con il Sud, call valutazione FQTS: rivolta a enti valutatori.",
-    "Invitalia, Autoimpiego Centro-Nord: territorio diverso dalla Puglia. Contratto di sviluppo: investimento minimo di 20 milioni."
+    "Fondazione Unipolis, Bando POP 2026 (2026-10-15): l'ente deve essere costituito tra il 2016-01-01 e il 2024-12-31. Ground Club è del 2026, le imprese sono escluse.",
+    "MiC/Invitalia, Voucher piccole imprese editoriali: servono ATECO 58.11, almeno 10 libri pubblicati e costituzione prima del 2020.",
+    "CCIAA Bari, bandi chiusi in anticipo:",
+    "AFC, IPA South Adriatic Co-Development Film Fund: per imprese di produzione audiovisiva.",
+    "Comune di Bari: posteggi della Fiera di San Michele (commercio), contributo sportivo per la marcialonga, adesione al Manifesto «Generare culture non violente» (senza contributo).",
+    "Galattica: Bonus Giovani INPS, Piani formativi aziendali, Assistenti familiari ed EURES, non pertinenti."
   ],
   "da_risolvere": [
-    "Interreg IPA South Adriatic, call MMM (2026-12-21): turismo sostenibile, fino a 200.000 euro per progetto; i beneficiari ammessi sono nel pacchetto di candidatura, non letto. Potenzialmente utile per Ground o Music Adventure in partenariato.",
-    "ARET: un'opportunità di fornitura, non un contributo. È aperta una consultazione di mercato per la manutenzione del sito istituzionale, in cui MDNT potrebbe proporsi; il termine non è stato letto.",
-    "Nuovo IMAIE, bandi musica: elencati come aperti ma senza date. Le graduatorie 2025-2026 risultano pubblicate e i PDF non sono stati letti.",
-    "Trasformazioni e Reti: risorse residue non verificate; l'elenco ATECO ammessi è da controllare per Music Adventure e MDNT.",
-    "Teatro Pubblico Pugliese: home vuota, /bandi-e-avvisi/ con errore HTTP 500; la pagina di Puglia Showcase non riporta scadenze.",
-    "Multimisura POC Giovani e Maestro Artigiano (Sistema Puglia): le pagine non hanno descrizione; contenuto non verificato.",
-    "CCIAA Bari, Bando Certificazione competenze 2026: dettagli non letti.",
-    "Fondazione Puglia: Stagioni Culturali ed Eventi Estivi 2026 sono chiusi; da tenere d'occhio per il 2027.",
-    "MiC, pagina bandi generale: resta aperto il punto già segnalato in fonti.",
-    "Testo rivolto a un'IA: segnalazione dubbia nella pagina notizie di Puglia Sounds, probabilmente riferita alla richiesta di lettura stessa. In nessuna pagina sono state eseguite istruzioni."
+    "Lettura incompleta del 2026-10-08: la lettura di ieri si fermava agli elenchi, così 4 bandi aperti della CCIAA di Bari e 8 opportunità di Galattica non erano stati registrati. Da oggi la CCIAA va letta anche nelle pagine dei singoli bandi e Galattica dalla pagina «opportunità».",
+    "Pagine ufficiali non lette: SME Fund (EUIPO), Get it!, Tecnonidi JTF Taranto e Pollination Project sono valutati dalla scheda di Galattica. I massimali di SME Fund e i limiti di anzianità di Get it! non sono verificati.",
+    "Albo degli operatori culturali del Comune di Bari: iscrizione di Music Adventure e Ground Club non verificata; serve per Divulgazione Pop e per altri contributi comunali.",
+    "Ora di chiusura del Voucher Turismo: non letta nel bando.",
+    "Ancora aperti dal 2026-10-08:",
+    "Testo rivolto a un'IA: nessuno rilevato nelle pagine lette oggi."
   ],
-  "visti_totali": 100
+  "visti_totali": 125
 }
